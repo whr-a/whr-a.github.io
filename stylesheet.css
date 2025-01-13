@@ -1,0 +1,76 @@
+body,
+td,
+th,
+tr,
+p,
+a,
+strong,
+papertitle,
+name,
+abs {
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 15px; /* 增大字体 */
+}
+
+heading, heading2 {
+  font-family: 'Century', serif; /* 使用 Century 字体 */
+  font-size: 28px; /* 增大小标题字体 */
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-color: #ad7020;
+  text-decoration-color: #fba524;
+}
+
+papertitle {
+  font-weight: 700;
+}
+
+name {
+  font-size: 30px; /* 增大字体 */
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px rgb(235, 255, 58);
+}
+
+a:focus,
+a:hover {
+  color: #083159;
+  text-decoration: none;
+}
+
+b {
+  color: #ff5005;
+  text-decoration: none;
+}
+
+a.a1 {
+  color: #064e82;
+  text-shadow: 0px 0px 0.5px rgb(235, 61, 30);
+}
+
+a.a2 {
+  color: #000000;
+  text-shadow: none;
+}
+
+abs {
+  color: #EB6400;
+}
+
+.one, .two, .fade {
+  width: 160px;
+  height: 160px;
+  transition: opacity .2s ease-in-out;
+  position: relative;
+}
+
+.two {
+  position: absolute;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
