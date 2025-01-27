@@ -5,15 +5,15 @@
   <style>
     body {
       font-family: 'Times New Roman', Times, serif;
-      font-size: 18px; /* 缩小字体大小 */
-      background: url('images/niumo.jpg') no-repeat center center fixed;
+      font-size: 20px; /* 缩小字体大小 */
+      background: url('images/home.jpg') no-repeat center center fixed;
       background-size: cover;
       position: relative;
     }
 
     body::after {
       content: "";
-      background: rgba(255, 255, 255, 0.5); /* 50% 透明度 */
+      background: rgba(255, 255, 255, 0.762); /* 50% 透明度 */
       position: absolute;
       top: 0;
       left: 0;
@@ -23,8 +23,8 @@
     }
 
     table {
-      width: 90%; /* 调整页面宽度 */
-      max-width: 850px; /* 调整页面最大宽度 */
+      width: 95%; /* 调整页面宽度 */
+      max-width: 1000px; /* 调整页面最大宽度 */
       margin: 0 auto;
     }
 
@@ -34,6 +34,10 @@
   </style>
 
   <script>
+    function changeImage(imagePath) {
+      var image = document.getElementById('profile-pic');
+      image.src = imagePath;
+    }
     (function () {
         var a_idx = 0;
         window.onclick = function (event) {
@@ -130,7 +134,9 @@
                       <d>Shanghai Jiao Tong University</d></a>. Currently, I am a research intern at <a href="https://epcc.sjtu.edu.cn" target="_blank">
                         <d>Emerging Parallel Computer Center (EPCC Lab)</d></a>, co-advised by Prof. <a href="https://www.cs.sjtu.edu.cn/~leng-jw/" target="_blank">
                           <d>Jingwen Leng</d></a> and Prof. <a href="https://yufenguofr.github.io/" target="_blank">
-                            <d>Yu Feng</d></a>. My research interest mainly lies in computer systems, especially in the field of creating efficient algorithms and hardware-software co-design for machine learning systems. <br><br>
+                            <d>Yu Feng</d></a>. I also had a wonderful time working with Prof. <a href="https://dai.sjtu.edu.cn/pepledetail.html?id=218" target="_blank">
+                              <d>Guohao Dai</d></a> at <a href="https://dai.sjtu.edu.cn/" target="_blank">
+                                <d>the Design Automation Innovation & Domain-specific Artificial Intelligence (DAI) Group</d></a>. My research interest mainly lies in the intersection between artificial intelligence and computer systems, especially in the field of creating efficient algorithms, systems and accelerators for machine learning. <br><br>
 
                 Feel free to check out my CV and drop me an e-mail if you're interested in my research or coursework.
 
@@ -157,13 +163,14 @@
                 <a href="https://radioheading.github.io" target="_blank">Personal Blog</a> &nbsp/&nbsp
                 <a href="pdf/CV.pdf" target="_blank">CV</a> &nbsp;&nbsp/&nbsp
                 <a href="https://github.com/Radioheading/" target="_blank">Github</a>&nbsp/&nbsp
-                <a href="https://twitter.com/XingyangLi96943/" target="_blank">Twitter</a>
+                <a href="https://x.com/XYLi_Bruce" target="_blank">Twitter</a>
               </p>
             </td>
             <td style="padding:0%; width:26%; max-width:26%;"> <!-- move the photo a bit left -->
               <br>
               <!-- <br> -->
-              <img style="padding:1%; width:100%; max-width:90%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/self.jpg" class="hoverZoomLink">
+              <!-- <img style="padding:1%; width:100%; max-width:90%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/self.jpg" class="hoverZoomLink"> -->
+              <img id="profile-pic" style="padding:1%; width:100%; max-width:90%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/casual_self.png" class="hoverZoomLink" onmouseover="changeImage('images/self.jpg')" onmouseout="changeImage('images/casual_self.png')">
               <!-- <a href="https://hits.seeyoufarm.com" target="_blank">
                 <img 
                   src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false" 
@@ -206,7 +213,18 @@
           <heading>Experience</heading>
       <br>
       <tr>
-        <td style="padding-left:27px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/EPCC.png", width="110"></td>
+        <td style="padding-left:27px;padding-right:10px;width:25%;vertical-align:middle"><img src="images/DAI-logo.png", width="170"></td>
+        <td width="90%" valign="center">
+          <strong><a href="http://dai.sjtu.edu.cn" target="_blank"><papertitle>Design Automation Innovation & Domain-specific Artificial Intelligence Group</papertitle></a></strong>
+          <br> <em>2024.10 - 2025.2</em>
+          <br> <strong>Research Intern</strong>
+          <br> Research Advisor: Prof. <a href="https://dai.sjtu.edu.cn/pepledetail.html?id=218" target="_blank">
+            <d>Guohao Dai</d></a>
+          <br> Research Interest: Algorithm-hardware co-design for accelerating 3D video generation models(3D-VGMs).
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:27px;padding-right:10px;width:25%;vertical-align:middle"><img src="images/EPCC.png", width="170"></td>
         <td width="90%" valign="center">
           <strong><a href="http://epcc.sjtu.edu.cn" target="_blank"><papertitle>Emerging Parallel Computer Center (EPCC Lab)</papertitle></a></strong>
           <br> <em>2024.6 - 2024.11</em>
@@ -219,7 +237,7 @@
       </tr>
       <tr>
           <br>
-          <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/SJTU.png", width="108"></td>
+          <td style="padding-left:20px;padding-right:10px;width:25%;vertical-align:middle"><img src="images/SJTU.png", width="165"></td>
           <td width="90%" valign="center">
             <strong><a href="https://en.sjtu.edu.cn/" target="_blank"><papertitle>Shanghai Jiao Tong University (SJTU)</papertitle></a></strong>
             <br> <em>2022.08 - Present</em>
@@ -247,11 +265,157 @@
             <li>2023: <strong>Longfor Scholarship</strong> (<strong>Youngest</strong> winner, <strong>10</strong>/year in Zhiyuan College, SJTU)</li><!-- , 20000RMB¥-->
           </p>
           <p>
-            <li>2021: <strong>Honorable Mention</strong> </li> in American Mathematical Contest in Modeling(MCM), our team had an average age of 15. <!-- (1000RMB¥)-->
+            <li>2021: <strong>Honorable Mention</strong> in American Mathematical Contest in Modeling(MCM), our team had an average age of 15. <!-- (1000RMB¥)-->
           </p>
         </td>
       </tr>
   </tbody></table>
+
+  <!-- Research -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <br>
+    <heading>Research</heading>
+    <br>
+    <p>
+      My research interest is broadly in <strong>Machine Learning Systems</strong>, with particular interests in algorithms, systems and hardware accelerators for vision models, which I believe are essential on human's quest for AGI. My long-term goal is building generalizable and efficient models that can entertain and benefit everyone.
+    Representative works are <span class="highlight">highlighted</span>.
+    </p>
+      
+      <!-- KETA -->
+    
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:0px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/KETA.svg' width="280"></div>
+          <!-- <br> -->
+          <img src='images/KETA.svg' width="280">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:60px;width:90%;vertical-align:middle">
+        <a href="https://polarisdane.github.io/KETA/" target="_blank">
+          <papertitle>KETA: Kinematic-Phrases-Enhanced Text-to-Motion Generation via Fine-grained Alignment
+          </papertitle>
+        </a>
+        <br>
+        Yu Jiang*, Yixing Chen*, <strong>Xingyang Li*</strong>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://polarisdane.github.io/KETA/CV_assignment.pdf">Paper</a> /
+        <a href="https://polarisdane.github.io/KETA">Project</a> / 
+        <a href="https://github.com/PolarisDane/KETA/tree/main">Code</a>
+          <!-- @misc{kuang2024ramretrievalbasedaffordancetransfer,
+            <br>
+            title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation}, 
+            <br>
+            author={Yuxuan Kuang and Junjie Ye and Haoran Geng and Jiageng Mao and Congyue Deng and Leonidas Guibas and He Wang and Yue Wang},
+            year={2024},
+            <br>
+            eprint={2407.04689},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2407.04689}, 
+            <br>
+      } -->
+        <br>
+        <em><strong>arxiv preprint 2025, <b><font color='red'>Full-mark class project</font></b> in Computer Vision(AI3604)</strong></em>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/KETA.svg' width="200"></div>
+          <!-- <br> -->
+          <img src='images/KETA.svg' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/Open6DOR" target="_blank">
+          <papertitle><br>Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach</papertitle>
+        </a>
+      <br>
+        <a class="a2" href="https://selina2023.github.io/" target="_blank">Yufei Ding</a>*,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,  
+        <a class="a2" href="" target="_blank">Chaoyi Xu</a>,
+        <a class="a2" href="" target="_blank">Xiaomeng Fang</a>,
+        <a class="a2" href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a>,
+        <a class="a2" href="http://wei.songl.in/" target="_blank">Songlin Wei</a>,
+        <a class="a2" href="https://daiqy.github.io/" target="_blank">Qiyu Dai</a>,
+        <a class="a2" href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en" target="_blank">Zhizheng Zhang</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10802733" target="_blank">Paper</a>
+        /
+        <a href="https://pku-epic.github.io/Open6DOR" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/Selina2023/Open6DOR">Code</a>
+        /
+        <a href="https://www.youtube.com/watch?v=ekeKHs2eqsE">Video</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('o6d'))">Bibtex</a>
+        <p id="o6d" style="font:1px; display: none">
+          @INPROCEEDINGS{10802733,
+            <br>
+            author={Ding, Yufei and Geng, Haoran and Xu, Chaoyi and Fang, Xiaomeng and Zhang, Jiazhao and Wei, Songlin and Dai, Qiyu and Zhang, Zhizheng and Wang, He},
+            <br>
+            booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+            <br>
+            title={Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach}, 
+            <br>
+            year={2024},
+            <br>
+            volume={},
+            <br>
+            number={},
+            <br>
+            pages={7359-7366},
+            <br>
+            keywords={Three-dimensional displays;Benchmark testing;Propulsion;6-DOF;Real-time systems;Artificial intelligence;Intelligent robots;Synthetic data},
+            <br>
+            doi={10.1109/IROS58592.2024.10802733}
+            <br>
+          }
+
+        </p>
+        <br>
+        <em><strong>IROS 2024, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <!-- <br>
+        <em><strong>CVPR 2024 @ VLADA, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <br>
+        <em><strong>ICRA 2024 @ 3D Manipulation, <b><font color='red'>Spotlight Presentation</font></b></strong></em> -->
+        <p></p>
+        <p> We present Open6DOR, a challenging and comprehensive benchmark for open-instruction 6-DoF 
+          object rearrangement tasks. Following this, we propose a zero-shot and robust method, 
+          Open6DORGPT, which proves effective in demanding simulation environments and real-world scenarios.</p>
+      </td>
+    </tr>
 
   <!-- Miscellaneous -->
   <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -268,8 +432,6 @@
             <br><li>I am a math enthusiast, and I'm interested in mathematical logic and information theory. </li>
             <br><li>I am a football lover⚽, leading ACMClass2022 to win the champion in ACM Class Football Competition twice <a href="./images/football/2024ASF.jpg" target="_blank">
               <d>with my good friends.</d></a> </li>
-            <!-- <br><li>I have a passion for philanthropy💖. I have participated in many charity events, and for my outstanding performance and contributions, I have been honored to receive the <a href="https://youth.pku.edu.cn/tzgg/zytz/355467.htm" target="_blank">Zhongying Moral Education Scholarship</a> for two consecutive years.</li>
-            <br><li>To promote computer knowledge💻, I became one of the leaders of <a href="https://lcpu.club/wiki/index.php?title=%E9%A6%96%E9%A1%B5" target="_blank">Linux Club of Peking University(LCPU)</a>, helping to popularize computer knowledge with students at Peking University.</li>  -->
           </p>
         </td>
       </tr>
@@ -282,7 +444,7 @@
       <!-- <br> -->
       <hr>
         <p style="text-align:center">
-          This homepage is designed based on <a href="https://geng-haoran.github.io">Haoran Geng</a> and <a href="https://jonbarron.info/">Jon Barron</a>'s website. The background image is borrowed from my Linear Algebra/Mathematical Logic teacher <a href="https://basics.sjtu.edu.cn/people/~chen">Yijia Chen</a>'s website. Last updated: Dec 18, 2024
+          This homepage is designed based on <a href="https://geng-haoran.github.io">Haoran Geng</a> and <a href="https://jonbarron.info/">Jon Barron</a>'s website. Last updated: Jan 26, 2024
 
           <br>
           © 2024 Xingyang Li
