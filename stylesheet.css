@@ -9,7 +9,7 @@ papertitle,
 name,
 abs {
     font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: 18px; /* 增大字体 */
+    font-size: 16px; /* 增大字体 */
 }
 
 heading, heading2 {
