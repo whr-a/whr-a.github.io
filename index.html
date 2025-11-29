@@ -221,127 +221,82 @@
   </tbody></table>
 
 <!-- Selected Publications -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <!-- Selected Publications -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
     <br>
     <heading>Selected Publications</heading>
     <br>
     <p>
-      My research interest is broadly in <strong>Machine Learning Systems</strong>, with particular interests in algorithms, systems and hardware accelerators for vision models, which I believe are essential on human's quest for AGI. My long-term goal is building generalizable and efficient models that can entertain and benefit everyone.
-    Representative works are <span class="highlight">highlighted</span>.
+      My research interests lie in <strong>speech and audio processing</strong>, especially neural codecs and speech language models for complex acoustic environments. I am interested in building general and high-fidelity speech representations that are useful for both reconstruction and downstream tasks.
+      Representative works are <span class="highlight">highlighted</span>.
     </p>
 
-    <!-- SimPicker -->
-    
-    <tr onmouseout="malle_stop()" onmouseover="malle_start()" bgcolor="#ffffec">
-      <td style="padding:40px;width:25%;text-align:center;display:flex;align-items:center;">
-        <div class="one">
-          <div class="two" id='malle_image'>
-            <!-- <br> -->
-            <img src='images/SimPicker.svg' width="200">
-          </div>
-          <!-- <br> -->
-          <img src='images/SimPicker.svg' width="200">
-        </div>
-        <script type="text/javascript">
-          function malle_start() {
-            document.getElementById('malle_image').style.opacity = "1";
-          }
-          function malle_stop() {
-            document.getElementById('malle_image').style.opacity = "0";
-          }
-          malle_stop();
-        </script>
-      </td>
-      
-      <td style="padding:80px;width:90%;vertical-align:middle">
-        <a href="https://github.com/whitecmile" target="_blank">
-          <papertitle>Harnessing Conventional Video Processing Insights for Emerging 3D Video Generation Models: A Comprehensive Attention-aware Way
-          </papertitle>
+    <!-- BSCodec (代表作，高亮) -->
+    <tr bgcolor="#ffffec">
+      <td style="padding:20px 0px 0px 0px; width:100%; vertical-align:middle;">
+        <a href="https://arxiv.org/pdf/2511.06150" target="_blank">
+          <papertitle>BSCodec: A Band-Split Neural Codec for High-Quality Universal Audio Reconstruction</papertitle>
         </a>
         <br>
-        Tianlang Zhao*, Jun Liu*, <strong>Xingyang Li*</strong>, Li Ding, Jinhao Li, Shuaiheng Li, Jinbo Hu, Guohao Dai
+        <strong>Haoran Wang</strong>, Jiatong Shi, Jinchuan Tian, Bohan Li, Kai Yu, Shinji Watanabe
         <br>
-        (*equal contribution)
-        <!-- <br> -->
-        <!-- <a href="https://polarisdane.github.io/KETA/CV_assignment.pdf">Paper</a> -->
-          <!-- @misc{kuang2024ramretrievalbasedaffordancetransfer,
-            <br>
-            title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation}, 
-            <br>
-            author={Yuxuan Kuang and Junjie Ye and Haoran Geng and Jiageng Mao and Congyue Deng and Leonidas Guibas and He Wang and Yue Wang},
-            year={2024},
-            <br>
-            eprint={2407.04689},
-            <br>
-            archivePrefix={arXiv},
-            <br>
-            primaryClass={cs.RO},
-            <br>
-            url={https://arxiv.org/abs/2407.04689}, 
-            <br>
-      } -->
+        Under review.
         <br>
-         <!-- enter for a new line-->
-        <em><strong><b><font color='red'>Accepted by DAC'25</font></b></strong></em>
+        <a href="https://arxiv.org/pdf/2511.06150" target="_blank">arXiv</a> /
+        <a href="https://github.com/espnet/espnet/pull/6297" target="_blank">Code</a> /
+        <a href="https://anonymous-submitany.github.io/" target="_blank">Demo</a>
         <p></p>
       </td>
     </tr>
-      
-      <!-- KETA -->
-    
-    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-      <td style="padding:0px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='malle_image'>
-            <!-- <br> -->
-            <img src='images/KETA.svg' width="250"></div>
-          <!-- <br> -->
-          <img src='images/KETA.svg' width="250">
-        </div>
-        <script type="text/javascript">
-          function malle_start() {
-            document.getElementById('malle_image').style.opacity = "1";
-          }
-          function malle_stop() {
-            document.getElementById('malle_image').style.opacity = "0";
-          }
-          malle_stop()
-    </script>
-      </td>
-      <td style="padding:80px;width:90%;vertical-align:middle">
-        <a href="https://polarisdane.github.io/KETA/" target="_blank">
-          <papertitle>KETA: Kinematic-Phrases-Enhanced Text-to-Motion Generation via Fine-grained Alignment
-          </papertitle>
+
+    <!-- General Discrete Speech Codec -->
+    <tr>
+      <td style="padding:20px 0px 0px 0px; width:100%; vertical-align:middle;">
+        <a href="https://arxiv.org/pdf/2505.22515" target="_blank">
+          <papertitle>Towards General Discrete Speech Codec for Complex Acoustic Environments: A Study of Reconstruction and Downstream Task Consistency</papertitle>
         </a>
         <br>
-        Yu Jiang*, Yixing Chen*, <strong>Xingyang Li*</strong>
+        <strong>Haoran Wang</strong>, Guanyu Chen, Bohan Li, Hankun Wang, Yiwei Guo, Zhihan Li, Xie Chen, Kai Yu
         <br>
-        (*equal contribution)
+        IEEE Automatic Speech Recognition and Understanding Workshop (ASRU), 2025.
         <br>
-        <a href="https://arxiv.org/abs/2501.15058">Paper</a> /
-        <a href="https://polarisdane.github.io/KETA">Project</a> / 
-        <a href="https://github.com/PolarisDane/KETA/tree/main">Code</a>
-          <!-- @misc{kuang2024ramretrievalbasedaffordancetransfer,
-            <br>
-            title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation}, 
-            <br>
-            author={Yuxuan Kuang and Junjie Ye and Haoran Geng and Jiageng Mao and Congyue Deng and Leonidas Guibas and He Wang and Yue Wang},
-            year={2024},
-            <br>
-            eprint={2407.04689},
-            <br>
-            archivePrefix={arXiv},
-            <br>
-            primaryClass={cs.RO},
-            <br>
-            url={https://arxiv.org/abs/2407.04689}, 
-            <br>
-      } -->
-        <br>
-        <em><strong><b><font color='red'>IJCNN 2025 Oral, Full-mark class project</font></b> in Computer Vision(AI3604)</strong></em>
+        <a href="https://arxiv.org/pdf/2505.22515" target="_blank">arXiv</a>
         <p></p>
       </td>
     </tr>
+
+    <!-- PURE Codec -->
+    <tr>
+      <td style="padding:20px 0px 0px 0px; width:100%; vertical-align:middle;">
+        <papertitle>PURE Codec: Progressive Unfolding of Residual Entropy for Speech Codec Learning</papertitle>
+        <br>
+        Jiatong Shi, <strong>Haoran Wang</strong>, William Chen, Chenda Li, Wangyou Zhang, Jinchuan Tian, Shinji Watanabe
+        <br>
+        IEEE Automatic Speech Recognition and Understanding Workshop (ASRU), 2025.
+        <p></p>
+      </td>
+    </tr>
+
+    <!-- SLM coherence paper -->
+    <tr>
+      <td style="padding:20px 0px 20px 0px; width:100%; vertical-align:middle;">
+        <a href="https://arxiv.org/pdf/2412.17048" target="_blank">
+          <papertitle>Why Do Speech Language Models Fail to Generate Semantically Coherent Outputs? A Modality Evolving Perspective</papertitle>
+        </a>
+        <br>
+        Hankun Wang, <strong>Haoran Wang</strong>, Yiwei Guo, Zhihan Li, Chenpeng Du, Xie Chen, Kai Yu
+        <br>
+        Under review.
+        <br>
+        <a href="https://arxiv.org/pdf/2412.17048" target="_blank">arXiv</a>
+        <p></p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
 
  <!-- Aknowledgements -->
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
